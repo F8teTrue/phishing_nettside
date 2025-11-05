@@ -15,7 +15,7 @@ let currentIndex = 0;
 let score = 0;
 
 // Hent spørsmål
-fetch("data/questions.json")
+fetch("data/qustions.json")
     .then(function (res) {
         return res.json();
     })
@@ -45,9 +45,11 @@ function showQuestion() {
 
     //Bilde (hvis det er et bilde (Vittorio, 2025))
     if (q.image) {
-        const figure = document.createElement("img");
+        const figure = document.createElement("figure");
+
+        const img = document.createElement("img");
         img.src = q.image;
-        img.alt = q-imageAlt || "Scenario bilde";
+        img.alt = q.imageAlt || "Scenario bilde";
         figure.appendChild(img);
 
         const caption = document.createElement("figcaption");
