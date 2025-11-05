@@ -1,62 +1,81 @@
 document.addEventListener("DOMContentLoaded", function () {
     const yearEL = document.getElementById("year");
     if (yearEL) {
-        yearEL.textContent = new Date.getFullYear();
+        yearEL.textContent = new Date().getFullYear();
     };
-})
 
-const app = document.getElementById("quizApp");
-if (!app) {
-    return;
-}
-
-let questions = [];
-let currentIndex = 0;
-let score = 0;
-
-// Hent spørsmål
-fetch("data/qustions.json")
-    .then(function (res) {
-        return res.json();
-    })
-    .then(function (data) {
-        questions = data;
-        showQuestion();
-    })
-    .catch(function () {
-        app.innerHTML = "<p>Kunne ikke laste quizen. Sjekk om data/questions.json filen finnes.</p>"
-    });   
-
-
-function showQuestion() {
-    if (!questions || questions.length === 0) {
-        app.innerHTML = "<p>Ingen spørsmål funnet</p>"
+    const app = document.getElementById("quizApp");
+    if (!app) {
         return;
     }
-    const q = questions[currentIndex];
 
-    // Tøm Skjermen
-    app.innerHTML = "";
+    let questions = [];
+    let currentIndex = 0;
+    let score = 0;
 
-    //Spørsmåls tittel
-    const title = document.createElement("h3")
-    title.textContent = (currentIndex + 1) + ". " + q.question;
-    app.appendChild(title);
+    // Hent spørsmål
+    fetch("data/qustions.json")
+        .then(function (res) {
+            return res.json();
+        })
+        .then(function (data) {
+            questions = data;
+            console.log(questions)
+            showQuestion();
+        })
+        .catch(function () {
+            app.innerHTML = "<p>Kunne ikke laste quizen. Sjekk om data/questions.json filen finnes.</p>"
+        });   
 
-    //Bilde (hvis det er et bilde (Vittorio, 2025))
-    if (q.image) {
-        const figure = document.createElement("figure");
 
-        const img = document.createElement("img");
-        img.src = q.image;
-        img.alt = q.imageAlt || "Scenario bilde";
-        figure.appendChild(img);
+    function showQuestion() {
+        if (!questions || questions.length === 0) {
+            app.innerHTML = "<p>Ingen spørsmål funnet</p>"
+            return;
+        }
+        const q = questions[currentIndex];
 
-        const caption = document.createElement("figcaption");
-        caption.textContent = q.type ? ("Scenario: " + q.type) : "Scenario";
-        figure.appendChild(caption);
+        // Tøm Skjermen
+        app.innerHTML = "";
 
-        app.appendChild(figure)
+        //Spørsmåls tittel
+        const title = document.createElement("h3")
+        title.textContent = (currentIndex + 1) + ". " + q.question;
+        app.appendChild(title);
+
+        //Bilde (hvis det er et bilde (Vittorio, 2025))
+        if (q.image) {
+            const figure = document.createElement("figure");
+
+            const img = document.createElement("img");
+            img.src = q.image;
+            img.alt = q.imageAlt || "Scenario bilde";
+            figure.appendChild(img);
+
+            const caption = document.createElement("figcaption");
+            caption.textContent = q.type ? ("Scenario: " + q.type) : "Scenario";
+            figure.appendChild(caption);
+
+            app.appendChild(figure)
+        }
+
+        // Alternativer
+        const optionsWrap = document.createElement("div");
+        optionsWrap.className = "quiz-options";
+        app.appendChild(optionsWrap);
+
+        q.options.forEach(function (text, idx) {
+            const btn = document.createElement("button");
+            btn.className = "quiz-button";
+            btn.textContent = text;
+            btn.addEventListener("click", function () {
+                handleAnswer(idx, btn, optionsWrap);
+            });
+            optionsWrap.appendChild(btn)
+        });
+    };
+
+    function handleAnswer(chosenIndex, clickedBtn, optionsWrapEl) {
+
     }
-
-}
+}); 
