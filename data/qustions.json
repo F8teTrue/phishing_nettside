@@ -4,14 +4,149 @@
         "type": "sms",
         "image": "bilder/quiz/placeholder.jpg",
         "imageAlt": "Placeholder bilde alt. bytt ut senere.",
-        "question": "F.eks. Hva gjør du hvis du får denne meldingen",
+        "question": "Du får meldingen under på SMS, hva bør du gjøre?",
         "options": [
-            "alterantiv 1",
-            "alterantiv 2",
-            "alterantiv 3",
-            "alterantiv 4"
+            "Svare SMSen med «Y» som de ber deg om",
+            "Sjekke på Posten Norge sin nettside om noe har skjedd",
+            "Lese nøye å innse at ingenting heter Posten Norge",
+            "Blokkere de"
+        ],
+        "correctIndex": 1,
+        "explaination": "Gå alltid til den offisielle siden på egen hånd. Ikke stol på lenker i SMS."
+    },
+    {
+        "id": 2,
+        "type": "sms",
+        "image": "bilder/quiz/placeholder.jpg",
+        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
+        "question": "Du får en SMS som sier banken har oppdaget mistenkelig aktivitet og ber deg klikke på en lenke.",
+        "options": [
+            "Klikke på lenken og logge inn så raskt som mulig",
+            "Slette meldingen og logge inn via bankens offisielle app/nettside for å sjekke selv",
+            "Svare SMS-en og be om mer informasjon",
+            "Dele meldingen med venner på Facebook"
+        ],
+        "correctIndex": 1,
+        "explaination": "Bruk alltid bankens offisielle app eller nettside. Ikke trykk på lenker i SMS."
+    },
+    {
+        "id": 3,
+        "type": "sms",
+        "image": "bilder/quiz/placeholder.jpg",
+        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
+        "question": "Du mottar en melding om at du har vunnet en konkurranse du ikke har deltatt i. For å få premien må du betale frakt.",
+        "options": [
+            "Betaler frakten, 49 kr er jo ikke så mye",
+            "Sjekker avsendernummeret og googler det",
+            "Ignorerer meldingen – dette er sannsynligvis svindel",
+            "Ringer nummeret som sendte meldingen"
         ],
         "correctIndex": 2,
-        "explaination": "Forklaring til svaret."
+        "explaination": "Hvis du ikke deltok, har du heller ikke vunnet. Dette er en vanlig svindelmetode."
+    },
+    {
+        "id": 4,
+        "type": "email",
+        "image": "bilder/quiz/placeholder.jpg",
+        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
+        "question": "Du får en e-post som hevder å være fra «IT-avdelingen» og ber deg oppgi passordet ditt.",
+        "options": [
+            "Sende passordet ditt med en gang",
+            "Svare og spørre hvorfor de trenger det",
+            "Rapportere e-posten som phishing og slette den",
+            "Klikke på alle lenker for å se hva som skjer"
+        ],
+        "correctIndex": 2,
+        "explaination": "Ingen seriøse aktører ber om passord. Dette er svindel."
+    },
+    {
+        "id": 5,
+        "type": "email",
+        "image": "bilder/quiz/placeholder.jpg",
+        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
+        "question": "Du får en e-post med en vedlagt faktura du ikke kjenner igjen.",
+        "options": [
+            "Åpner vedlegget for å sjekke hva det er",
+            "Ringer avsenderen via kontaktinfo på deres offisielle nettside for å bekrefte",
+            "Svarer e-posten og spør om mer info",
+            "Sender e-posten videre til kollegaer"
+        ],
+        "correctIndex": 1,
+        "explaination": "Bruk avsenderens offisielle kontaktinfo – ikke den i e-posten."
+    },
+    {
+        "id": 6,
+        "type": "email",
+        "image": "bilder/quiz/placeholder.jpg",
+        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
+        "question": "En e-post ser ut til å være fra sjefen og ber deg kjøpe gavekort raskt.",
+        "options": [
+            "Kjøpe gavekortene så sjefen blir fornøyd",
+            "Sjekke avsenderadressen nøye og kontakte sjefen via kjent kanal",
+            "Slette e-posten uten å sjekke",
+            "Svare at du gjør det senere"
+        ],
+        "correctIndex": 1,
+        "explaination": "Dette er en vanlig direktesjefsvindel. Kontakt sjefen direkte."
+    },
+    {
+        "id": 6,
+        "type": "email",
+        "image": "bilder/quiz/placeholder.jpg",
+        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
+        "question": "En e-post ser ut til å være fra sjefen og ber deg kjøpe gavekort raskt.",
+        "options": [
+            "Kjøpe gavekortene så sjefen blir fornøyd",
+            "Sjekke avsenderadressen nøye og kontakte sjefen via kjent kanal",
+            "Slette e-posten uten å sjekke",
+            "Svare at du gjør det senere"
+        ],
+        "correctIndex": 1,
+        "explaination": "Dette er en vanlig direktesjefsvindel. Kontakt sjefen direkte."
+    },
+    {
+        "id": 7,
+        "type": "phone",
+        "image": "bilder/quiz/placeholder.jpg",
+        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
+        "question": "Noen ringer og sier de er fra Microsoft og ber om tilgang til PC-en din.",
+        "options": [
+            "Gir dem tilgang slik at de kan hjelpe",
+            "Ber om telefonnummeret deres og ringer tilbake senere",
+            "Legger på – Microsoft ringer ikke privatpersoner på denne måten",
+            "Oppdaterer PC-en mens du holder linjen"
+        ],
+        "correctIndex": 2,
+        "explaination": "Microsoft ringer ikke tilfeldig for å gi support. Dette er svindel."
+    },
+    {
+        "id": 8,
+        "type": "phone",
+        "image": "bilder/quiz/placeholder.jpg",
+        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
+        "question": "En person ringer og sier de er fra banken og trenger personnummeret ditt.",
+        "options": [
+            "Oppgir nummeret så de kan fortsette",
+            "Spør om navnet deres og om du kan få snakke med sjefen",
+            "Legger på og ringer banken direkte via deres offisielle nummer",
+            "Ber dem sende forespørselen på SMS"
+        ],
+        "correctIndex": 2,
+        "explaination": "Ikke gi ut personopplysninger på telefon. Ring banken selv."
+    },
+    {
+        "id": 9,
+        "type": "phone",
+        "image": "bilder/quiz/placeholder.jpg",
+        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
+        "question": "Du får en telefon som sier du skylder penger, og må betale umiddelbart.",
+        "options": [
+            "Betaler med én gang for å unngå problemer",
+            "Ber om å få alt skriftlig og legger på",
+            "Gir dem kontonummeret ditt så de kan trekke beløpet",
+            "Ringer tilbake nummeret de ringte fra"
+        ],
+        "correctIndex": 1,
+        "explaination": "Krav som haster og truer er ofte svindel. Be om skriftlig dokumentasjon."
     }
 ]
