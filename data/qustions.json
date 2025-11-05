@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "type": "sms",
+        "image": "bilder/quiz/placeholder.jpg",
+        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
+        "question": "F.eks. Hva gjør du hvis du får denne meldingen",
+        "options": [
+            "alterantiv 1",
+            "alterantiv 2",
+            "alterantiv 3",
+            "alterantiv 4"
+        ],
+        "correctIndex": 2,
+        "explaination": "Forklaring til svaret."
+    }
+]
