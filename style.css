@@ -105,6 +105,17 @@ body {
   font-size: 1rem;
 }
 
+/* Quiz */
+.quiz-button.is-correct {
+  border-color: #1e8e3e;
+  background-color: #eaffea;
+}
+
+.quiz-button.is-wrong {
+  border-color: #d23e3e;
+  background-color: #ffecec;
+}
+
 /*Fade effekter*/
 
 .fade-in {

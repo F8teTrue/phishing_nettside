@@ -12,7 +12,7 @@
             "Blokkere de"
         ],
         "correctIndex": 1,
-        "explaination": "Gå alltid til den offisielle siden på egen hånd. Ikke stol på lenker i SMS."
+        "explanation": "Gå alltid til den offisielle siden på egen hånd. Ikke stol på lenker i SMS."
     },
     {
         "id": 2,
@@ -27,7 +27,7 @@
             "Dele meldingen med venner på Facebook"
         ],
         "correctIndex": 1,
-        "explaination": "Bruk alltid bankens offisielle app eller nettside. Ikke trykk på lenker i SMS."
+        "explanation": "Bruk alltid bankens offisielle app eller nettside. Ikke trykk på lenker i SMS."
     },
     {
         "id": 3,
@@ -38,11 +38,11 @@
         "options": [
             "Betaler frakten, 49 kr er jo ikke så mye",
             "Sjekker avsendernummeret og googler det",
-            "Ignorerer meldingen – dette er sannsynligvis svindel",
+            "Ignorerer meldingen - dette er sannsynligvis svindel",
             "Ringer nummeret som sendte meldingen"
         ],
         "correctIndex": 2,
-        "explaination": "Hvis du ikke deltok, har du heller ikke vunnet. Dette er en vanlig svindelmetode."
+        "explanation": "Hvis du ikke deltok, har du heller ikke vunnet. Dette er en vanlig svindelmetode."
     },
     {
         "id": 4,
@@ -57,7 +57,7 @@
             "Klikke på alle lenker for å se hva som skjer"
         ],
         "correctIndex": 2,
-        "explaination": "Ingen seriøse aktører ber om passord. Dette er svindel."
+        "explanation": "Ingen seriøse aktører ber om passord. Dette er svindel."
     },
     {
         "id": 5,
@@ -72,7 +72,7 @@
             "Sender e-posten videre til kollegaer"
         ],
         "correctIndex": 1,
-        "explaination": "Bruk avsenderens offisielle kontaktinfo – ikke den i e-posten."
+        "explanation": "Bruk avsenderens offisielle kontaktinfo - ikke den i e-posten."
     },
     {
         "id": 6,
@@ -87,7 +87,7 @@
             "Svare at du gjør det senere"
         ],
         "correctIndex": 1,
-        "explaination": "Dette er en vanlig direktesjefsvindel. Kontakt sjefen direkte."
+        "explanation": "Dette er en vanlig direktesjefsvindel. Kontakt sjefen direkte."
     },
     {
         "id": 6,
@@ -102,7 +102,7 @@
             "Svare at du gjør det senere"
         ],
         "correctIndex": 1,
-        "explaination": "Dette er en vanlig direktesjefsvindel. Kontakt sjefen direkte."
+        "explanation": "Dette er en vanlig direktesjefsvindel. Kontakt sjefen direkte."
     },
     {
         "id": 7,
@@ -113,11 +113,11 @@
         "options": [
             "Gir dem tilgang slik at de kan hjelpe",
             "Ber om telefonnummeret deres og ringer tilbake senere",
-            "Legger på – Microsoft ringer ikke privatpersoner på denne måten",
+            "Legger på - Microsoft ringer ikke privatpersoner på denne måten",
             "Oppdaterer PC-en mens du holder linjen"
         ],
         "correctIndex": 2,
-        "explaination": "Microsoft ringer ikke tilfeldig for å gi support. Dette er svindel."
+        "explanation": "Microsoft ringer ikke tilfeldig for å gi support. Dette er svindel."
     },
     {
         "id": 8,
@@ -132,7 +132,7 @@
             "Ber dem sende forespørselen på SMS"
         ],
         "correctIndex": 2,
-        "explaination": "Ikke gi ut personopplysninger på telefon. Ring banken selv."
+        "explanation": "Ikke gi ut personopplysninger på telefon. Ring banken selv."
     },
     {
         "id": 9,
@@ -147,6 +147,6 @@
             "Ringer tilbake nummeret de ringte fra"
         ],
         "correctIndex": 1,
-        "explaination": "Krav som haster og truer er ofte svindel. Be om skriftlig dokumentasjon."
+        "explanation": "Krav som haster og truer er ofte svindel. Be om skriftlig dokumentasjon."
     }
 ]

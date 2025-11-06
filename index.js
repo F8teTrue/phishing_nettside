@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(function (data) {
             questions = data;
-            console.log(questions)
             showQuestion();
         })
         .catch(function () {
@@ -73,9 +72,76 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             optionsWrap.appendChild(btn)
         });
+        
+        // Tilbakemelding på valgt svar
+        const feedback = document.createElement("p");
+        feedback.id = "quizFeedback";
+        feedback.className = "quiz-feedback";
+        app.appendChild(feedback);
+
+        const next = document.createElement("button");
+        next.textContent = "Neste";
+        next.className = "quiz-next";
+        next.disabled = true;
+        next.addEventListener("click", function () {
+            goNext();
+        });
+        app.appendChild(next);
+        
+        // Håndterer valgt svar og score
+        function handleAnswer(chosenIndex, clickedBtn, optionsWrapEl) {
+            const correct = q.correctIndex;
+
+            const all = optionsWrapEl.querySelectorAll("button");
+            all.forEach(function (b) {
+                b.disabled = true;
+            });
+
+            if (chosenIndex === correct) {
+                score = score + 1;
+                clickedBtn.classList.add("is-correct");
+                feedback.textContent = "Riktig! " + q.explanation;
+            } else {
+                clickedBtn.classList.add("is-wrong");
+                all[correct].classList.add("is-correct");
+                feedback.textContent = "Feil. " + q.explanation;
+            }
+
+            next.disabled = false;
+            next.focus();
+        };
+        
+        // Håndterer "neste spørsmål" funksjonalitet, og eventuelt kaller resultatsvisning.
+        function goNext() {
+            currentIndex = currentIndex + 1;
+            if (currentIndex < questions.length) {
+                showQuestion();
+            } else {
+                showResult();
+            }
+        };
     };
 
-    function handleAnswer(chosenIndex, clickedBtn, optionsWrapEl) {
+    // Viser resultatet av quizen og lar bruker starte på nytt.
+    function showResult() {
+        app.innerHTML = ""
 
+        const h = document.createElement("h3")
+        h.textContent = "Ferdig!";
+        app.appendChild(h);
+
+        const p = document.createElement("p");
+        p.textContent = "Du fikk " + score + " av " + questions.length + " riktige.";
+        app.appendChild(p);
+
+        const again = document.createElement("button");
+        again.textContent = "Start på nytt";
+        again.className = "quiz-button";
+        again.addEventListener("click", function () {
+            currentIndex = 0;
+            score = 0;
+            showQuestion();
+        });
+        app.appendChild(again);
     }
 }); 
