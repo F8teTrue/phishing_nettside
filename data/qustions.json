@@ -2,113 +2,143 @@
     {
         "id": 1,
         "type": "sms",
-        "image": "bilder/quiz/placeholder.jpg",
-        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
-        "question": "Du får meldingen under på SMS, hva bør du gjøre?",
+        "image": "bilder/quiz/CV-smishing.jpg",
+        "imageAlt": "SMS med jobbtilbud fra 'Isla' som ber om kontakt via WhatsApp.",
+        "question": "Du får denne meldingen som tilbyr deg en jobb og ber deg svare 'ja' for å få mer info via WhatsApp. Hva bør du gjøre?",
         "options": [
-            "Svare SMSen med «Y» som de ber deg om",
-            "Sjekke på Posten Norge sin nettside om noe har skjedd",
-            "Lese nøye å innse at ingenting heter Posten Norge",
-            "Blokkere de"
+            "Svare ja for å få mer informasjon om jobben",
+            "Svare nei og ignorere meldingen",
+            "Slette meldingen, blokkere nummeret og ikke dele personlig informasjon",
+            "Be om flere detaljer før du bestemmer deg"
         ],
-        "correctIndex": 1,
-        "explanation": "Gå alltid til den offisielle siden på egen hånd. Ikke stol på lenker i SMS."
+        "correctIndex": 2,
+        "explanation": "Dette er et klassisk svindelforsøk. Seriøse arbeidsgivere kontakter deg ikke via tilfeldige numre og WhatsApp. Ikke svar, og blokker avsenderen."
     },
     {
         "id": 2,
         "type": "sms",
-        "image": "bilder/quiz/placeholder.jpg",
-        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
-        "question": "Du får en SMS som sier banken har oppdaget mistenkelig aktivitet og ber deg klikke på en lenke.",
+        "image": "bilder/quiz/posten-smishing.jpg",
+        "imageAlt": "SMS som utgir seg for å være fra Posten med kortlenke og krav om adressebekreftelse.",
+        "question": "Du får denne meldingen fra 'Posten' som sier at pakken din er holdt tilbake og ber deg trykke på en lenke. Hva bør du gjøre?",
         "options": [
-            "Klikke på lenken og logge inn så raskt som mulig",
-            "Slette meldingen og logge inn via bankens offisielle app/nettside for å sjekke selv",
-            "Svare SMS-en og be om mer informasjon",
-            "Dele meldingen med venner på Facebook"
+            "Trykke på lenken for å bekrefte adressen",
+            "Svare med Y som meldingen ber om",
+            "Ignorere meldingen og slette den uten å sjekke",
+            "Ikke trykke på lenken, men heller sjekke på Postens offisielle nettside om pakken finnes"
         ],
-        "correctIndex": 1,
-        "explanation": "Bruk alltid bankens offisielle app eller nettside. Ikke trykk på lenker i SMS."
+        "correctIndex": 3,
+        "explanation": "Svindlere bruker ofte falske lenker for å stjele informasjon. Sjekk alltid via Postens egen nettside eller kundeservice. Aldri via SMS-lenker."
     },
     {
         "id": 3,
         "type": "sms",
-        "image": "bilder/quiz/placeholder.jpg",
-        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
-        "question": "Du mottar en melding om at du har vunnet en konkurranse du ikke har deltatt i. For å få premien må du betale frakt.",
+        "image": "bilder/quiz/altinn.jpeg",
+        "imageAlt": "SMS fra Altinn med beskjed om at du har fått et brev fra Skatteetaten.",
+        "question": "Du får denne SMS-en fra 'Altinn' som sier at du har fått et brev fra Skatteetaten. Hva bør du gjøre?",
         "options": [
-            "Betaler frakten, 49 kr er jo ikke så mye",
-            "Sjekker avsendernummeret og googler det",
-            "Ignorerer meldingen - dette er sannsynligvis svindel",
-            "Ringer nummeret som sendte meldingen"
+            "Slette meldingen fordi du tror den er svindel",
+            "Ignorere meldingen, det er sikkert uvesentlig",
+            "Logge inn på Altinn.no på egen hånd for å lese brevet",
+            "Svare på meldingen for å bekrefte at du har mottatt den"
         ],
         "correctIndex": 2,
-        "explanation": "Hvis du ikke deltok, har du heller ikke vunnet. Dette er en vanlig svindelmetode."
+        "explanation": "Dette er en ekte melding fra Altinn, men du bør alltid logge inn via Altinn.no, ikke via lenker i meldingen. Offentlige etater sender ofte slike varsler."
     },
     {
         "id": 4,
-        "type": "email",
-        "image": "bilder/quiz/placeholder.jpg",
-        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
-        "question": "Du får en e-post som hevder å være fra «IT-avdelingen» og ber deg oppgi passordet ditt.",
+        "type": "sms",
+        "image": "bilder/quiz/regning-smishing.jpg",
+        "imageAlt": "SMS som utgir seg for å være fra AutoPASS med kortlenke og krav om betaling.",
+        "question": "Du får en melding fra 'AutoPASS' som sier du har ubetalte regninger fra Statens Vegvesen og ber deg følge en lenke. Hva bør du gjøre?",
         "options": [
-            "Sende passordet ditt med en gang",
-            "Svare og spørre hvorfor de trenger det",
-            "Rapportere e-posten som phishing og slette den",
-            "Klikke på alle lenker for å se hva som skjer"
+            "Trykke på lenken og betale med en gang for å unngå gebyrer",
+            "Svare på SMS-en som beskrevet i meldingen",
+            "Slette meldingen uten å sjekke noe som helst",
+            "Ikke åpne lenken - gå heller til AutoPASS sin offisielle nettside for å sjekke om du faktisk skylder noe"
         ],
-        "correctIndex": 2,
-        "explanation": "Ingen seriøse aktører ber om passord. Dette er svindel."
+        "correctIndex": 3,
+        "explanation": "Dette er typisk svindel. Gå alltid direkte til AutoPASS eller Statens vegvesen sin offisielle nettside for å sjekke faktiske krav."
     },
     {
         "id": 5,
-        "type": "email",
-        "image": "bilder/quiz/placeholder.jpg",
-        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
-        "question": "Du får en e-post med en vedlagt faktura du ikke kjenner igjen.",
+        "type": "epost",
+        "image": "bilder/quiz/konto-utløper.jpeg",
+        "imageAlt": "E-post som sier at kontobeskyttelsen din utløper snart, og at du må fornye lisensen.",
+        "question": "Du mottar denne e-posten som sier at kontoen din er midlertidig deaktivert og ber deg fornye lisensen. Hva bør du gjøre?",
         "options": [
-            "Åpner vedlegget for å sjekke hva det er",
-            "Ringer avsenderen via kontaktinfo på deres offisielle nettside for å bekrefte",
-            "Svarer e-posten og spør om mer info",
-            "Sender e-posten videre til kollegaer"
+            "Trykke på 'Start undersøkelsen' for å fornye kontoen før den deaktiveres",
+            "Sjekke avsenderadressen og se om den faktisk kommer fra selskapet, før du eventuelt sletter e-posten",
+            "Slette e-posten uten å trykke på noe, og eventuelt logge inn på den ekte nettsiden for å sjekke kontostatus",
+            "Svare på e-posten og spørre om mer informasjon"
         ],
-        "correctIndex": 1,
-        "explanation": "Bruk avsenderens offisielle kontaktinfo - ikke den i e-posten."
+        "correctIndex": 2,
+        "explanation": "Dette er en phishing-epost. Ikke klikk på lenker eller knapper - gå heller direkte til den ekte nettsiden for å sjekke kontoen din. Phishing-eposter bruker ofte tidspress og trusler for å få deg til å handle raskt."
     },
     {
         "id": 6,
         "type": "email",
-        "image": "bilder/quiz/placeholder.jpg",
-        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
-        "question": "En e-post ser ut til å være fra sjefen og ber deg kjøpe gavekort raskt.",
+        "image": "",
+        "imageAlt": "",
+        "question": "Du får en e-post som hevder å være fra «IT-avdelingen» og ber deg oppgi passordet ditt.",
         "options": [
-            "Kjøpe gavekortene så sjefen blir fornøyd",
-            "Sjekke avsenderadressen nøye og kontakte sjefen via kjent kanal",
-            "Slette e-posten uten å sjekke",
-            "Svare at du gjør det senere"
+            "Rapportere e-posten som phishing og slette den",
+            "Sende passordet ditt med en gang",
+            "Svare og spørre hvorfor de trenger det",
+            "Klikke på alle lenker for å se hva som skjer"
         ],
-        "correctIndex": 1,
-        "explanation": "Dette er en vanlig direktesjefsvindel. Kontakt sjefen direkte."
-    },
-    {
-        "id": 6,
-        "type": "email",
-        "image": "bilder/quiz/placeholder.jpg",
-        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
-        "question": "En e-post ser ut til å være fra sjefen og ber deg kjøpe gavekort raskt.",
-        "options": [
-            "Kjøpe gavekortene så sjefen blir fornøyd",
-            "Sjekke avsenderadressen nøye og kontakte sjefen via kjent kanal",
-            "Slette e-posten uten å sjekke",
-            "Svare at du gjør det senere"
-        ],
-        "correctIndex": 1,
-        "explanation": "Dette er en vanlig direktesjefsvindel. Kontakt sjefen direkte."
+        "correctIndex": 0,
+        "explanation": "Ingen seriøse aktører ber om passord. Dette er svindel."
     },
     {
         "id": 7,
+        "type": "epost",
+        "image": "bilder/quiz/klarna.jpeg",
+        "imageAlt": "E-post som sier at du ikke kan bruke Klarna lenger og ber deg aktivere kontoen på nytt.",
+        "question": "Du får denne e-posten fra 'Klarna' som sier at kontoen din er utløpt og ber deg trykke på 'Aktiver nå'. Hva gjør du?",
+        "options": [
+            "Trykke på 'Aktiver nå' for å sikre at Klarna-kontoen ikke slettes",
+            "Slette e-posten og logge inn på den ekte Klarna-appen eller nettsiden for å sjekke om kontoen fungerer",
+            "Videresende e-posten til venner for å advare dem",
+            "Svare e-posten for å spørre hva som er galt"
+        ],
+        "correctIndex": 1,
+        "explanation": "Dette er et phishing-forsøk. Ikke klikk på 'Aktiver nå'. Gå heller direkte til Klarna-appen eller den offisielle nettsiden for å kontrollere om noe faktisk er galt."
+    },
+    {
+        "id": 8,
+        "type": "email",
+        "image": "",
+        "imageAlt": "",
+        "question": "En e-post ser ut til å være fra sjefen og ber deg kjøpe gavekort raskt.",
+        "options": [
+            "Kjøpe gavekortene så sjefen blir fornøyd",
+            "Slette e-posten uten å sjekke",
+            "Svare at du gjør det senere",
+            "Sjekke avsenderadressen nøye og kontakte sjefen via kjent kanal"
+        ],
+        "correctIndex": 3,
+        "explanation": "Dette er en vanlig direktesjefsvindel. Kontakt sjefen direkte."
+    },
+    {
+        "id": 9,
+        "type": "email",
+        "image": "",
+        "imageAlt": "",
+        "question": "En e-post ser ut til å være fra sjefen og ber deg kjøpe gavekort raskt.",
+        "options": [
+            "Kjøpe gavekortene så sjefen blir fornøyd",
+            "Sjekke avsenderadressen nøye og kontakte sjefen via kjent kanal",
+            "Slette e-posten uten å sjekke",
+            "Svare at du gjør det senere"
+        ],
+        "correctIndex": 1,
+        "explanation": "Dette er en vanlig direktesjefsvindel. Kontakt sjefen direkte."
+    },
+    {
+        "id": 10,
         "type": "phone",
-        "image": "bilder/quiz/placeholder.jpg",
-        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
+        "image": "",
+        "imageAlt": "",
         "question": "Noen ringer og sier de er fra Microsoft og ber om tilgang til PC-en din.",
         "options": [
             "Gir dem tilgang slik at de kan hjelpe",
@@ -120,25 +150,25 @@
         "explanation": "Microsoft ringer ikke tilfeldig for å gi support. Dette er svindel."
     },
     {
-        "id": 8,
+        "id": 11,
         "type": "phone",
-        "image": "bilder/quiz/placeholder.jpg",
-        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
+        "image": "",
+        "imageAlt": "",
         "question": "En person ringer og sier de er fra banken og trenger personnummeret ditt.",
         "options": [
+            "Legger på og ringer banken direkte via deres offisielle nummer",
             "Oppgir nummeret så de kan fortsette",
             "Spør om navnet deres og om du kan få snakke med sjefen",
-            "Legger på og ringer banken direkte via deres offisielle nummer",
             "Ber dem sende forespørselen på SMS"
         ],
-        "correctIndex": 2,
+        "correctIndex": 0,
         "explanation": "Ikke gi ut personopplysninger på telefon. Ring banken selv."
     },
     {
-        "id": 9,
+        "id": 12,
         "type": "phone",
-        "image": "bilder/quiz/placeholder.jpg",
-        "imageAlt": "Placeholder bilde alt. bytt ut senere.",
+        "image": "",
+        "imageAlt": "",
         "question": "Du får en telefon som sier du skylder penger, og må betale umiddelbart.",
         "options": [
             "Betaler med én gang for å unngå problemer",
