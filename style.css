@@ -74,6 +74,16 @@ body {
   margin-top: 1rem;
 }
 
+/* Kilder */
+.cite {
+  color: #0066cc;
+  text-decoration: none;
+}
+.cite:hover {
+  text-decoration: underline;
+}
+
+
 
 /* Bilder */
 
