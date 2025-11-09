@@ -70,8 +70,23 @@ body {
 }
 
 .text-box p {
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+}
+
+.text-box ul, 
+.text-box ol {
+  margin-left: 1.2rem;
+  padding-left: 1rem;
   font-size: 1.1rem;
-  margin-top: 1rem;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.text-box li {
+  margin-bottom: 0.6rem;
 }
 
 
@@ -83,8 +98,9 @@ body {
 }
 
 .box-figure img {
-  max-width: 100%;
+  max-width: 45%;
   height: auto;
+  margin: 0.5rem;
   border-radius: 8px;
   border: 1px solid var(--color-border);
 }
@@ -114,6 +130,98 @@ body {
 .quiz-button.is-wrong {
   border-color: #d23e3e;
   background-color: #ffecec;
+}
+
+#quizApp {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+#quizApp h3 {
+  font-size: 1.4rem;
+  font-family: var(--font-heading);
+  margin-bottom: 1rem;
+}
+
+#quizApp figure {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#quizApp img {
+  max-width: 70%;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+#quizApp figcaption {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+.quiz-options {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.quiz-button {
+  font-size: 1.1rem;
+  padding: 0.8rem 1rem;
+  background-color: var(--color-accent-light);
+  border: 2px solid var(--color-accent);
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.quiz-button:hover,
+.quiz-button:focus {
+  background-color: var(--color-accent);
+  color: white;
+  transform: scale(1.02);
+  outline: none;
+}
+
+.quiz-feedback {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.quiz-feedback.correct {
+  color: #2b7a0b; /* grønn */
+}
+
+.quiz-feedback.wrong {
+  color: #b30000; /* rød */
+}
+
+.quiz-next {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--color-accent);
+  color: white;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.quiz-next:enabled {
+  opacity: 1;
+}
+
+.quiz-next:hover:enabled {
+  background-color: #004c86;
 }
 
 /*Fade effekter*/
@@ -157,5 +265,9 @@ a:focus, a:hover {
 
   .site-header h1 {
     font-size: 1.6rem;
+  }
+  .box-figure img {
+    max-width: 100%;
+    margin: 0.5rem 0;
   }
 }
