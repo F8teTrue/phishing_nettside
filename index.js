@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(function () {
             app.innerHTML = "<p>Kunne ikke laste quizen. Sjekk om data/questions.json filen finnes.</p>"
-        });   
+        });
 
 
     function showQuestion() {
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             optionsWrap.appendChild(btn)
         });
-        
+
         // Tilbakemelding på valgt svar
         const feedback = document.createElement("p");
         feedback.id = "quizFeedback";
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
             goNext();
         });
         app.appendChild(next);
-        
+
         // Håndterer valgt svar og score
         function handleAnswer(chosenIndex, clickedBtn, optionsWrapEl) {
             const correct = q.correctIndex;
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
             next.disabled = false;
             next.focus();
         };
-        
+
         // Håndterer "neste spørsmål" funksjonalitet, og eventuelt kaller resultatsvisning.
         function goNext() {
             currentIndex = currentIndex + 1;
@@ -144,4 +144,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         app.appendChild(again);
     }
+
+
+   document.addEventListener("click", function(e) {
+    if (e.target.classList.contains("read-more-btn")) {
+        const target = document.querySelector(e.target.dataset.target);
+        target.classList.toggle("open");
+
+        e.target.textContent = target.classList.contains("open")
+            ? "Vis mindre"
+            : "Les mer";
+    }
+});
+
+
 }); 
