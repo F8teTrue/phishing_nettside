@@ -53,6 +53,10 @@ body {
 
 /* Tekst */
 
+.lead {
+  font-size: 1.1rem;
+}
+
 .text-box {
   background-color: white;
   border: 1px solid var(--color-border);
@@ -72,6 +76,7 @@ body {
 .text-box p {
   line-height: 1.8;
   margin-bottom: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .text-box ul, 
@@ -270,47 +275,14 @@ a:focus, a:hover {
 
 /* Les mer  */
 
-.hidden-content {
-    display: none;
+.hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
 }
 
-.read-more-button {
-    margin-top: 1rem;
-    padding: 0.8rem 1.2rem;
-    font-size: 1.1rem;
-    background-color: var(--color-accent);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.read-more-button:hover,
-.read-more-button:focus {
-    background-color: #00487c;
-}
-
-.text-box ul {
-    padding-left: 1.2rem;
-    overflow-wrap: anywhere;
-}
-
-/* Les mer-funksjon */
-.read-more-btn {
-    background-color: var(--color-accent);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
-    cursor: pointer;
-    margin: 1rem 0;
-}
-
-.read-more-btn:hover,
-.read-more-btn:focus {
-    background-color: #00497f;
-    outline: 2px solid var(--color-accent-light);
+.hidden.open {
+    max-height: 4000px; /* høyt nok til å passe innholdet */
 }
 
 .read-more-content {
@@ -318,9 +290,21 @@ a:focus, a:hover {
     margin-top: 1rem;
 }
 
-.read-more-content.open {
-    display: block;
+.read-more-btn {
+    background-color: #005ea2;
+    color: white;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
+
+.read-more-btn:hover,
+.read-more-btn:focus {
+    background-color: #004577;
+}
+
 
 
 @media (max-width: 600px) {

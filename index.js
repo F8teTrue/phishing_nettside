@@ -9,12 +9,17 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
+    function scrollToQuizTop() {
+        const y = app.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top: y, behavior: "smooth" });
+    }
+
     let questions = [];
     let currentIndex = 0;
     let score = 0;
 
     // Hent spørsmål
-    fetch("data/qustions.json")
+    fetch("data/questions.json")
         .then(function (res) {
             return res.json();
         })
@@ -39,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         //Spørsmåls tittel
         const title = document.createElement("h3")
+        title.id = "quizQuestionTitle";
         title.textContent = (currentIndex + 1) + ". " + q.question;
         app.appendChild(title);
 
@@ -116,8 +122,18 @@ document.addEventListener("DOMContentLoaded", function () {
             currentIndex = currentIndex + 1;
             if (currentIndex < questions.length) {
                 showQuestion();
+                requestAnimationFrame(() => {
+                    const t = document.getElementById("quizQuestionTitle");
+                    if (t) {
+                        const y = t.getBoundingClientRect().top + window.scrollY - 80;
+                        window.scrollTo({ top: y, behavior: "smooth" });
+                    } else {
+                        scrollToQuizTop();
+                    }
+                });
             } else {
                 showResult();
+                requestAnimationFrame(scrollToQuizTop);
             }
         };
     };
@@ -141,21 +157,24 @@ document.addEventListener("DOMContentLoaded", function () {
             currentIndex = 0;
             score = 0;
             showQuestion();
+            requestAnimationFrame(scrollToQuizTop);
         });
         app.appendChild(again);
     }
 
+const btn = document.getElementById("vishingReadMoreBtn");
+    const content = document.getElementById("vishingMoreContent");
 
-   document.addEventListener("click", function(e) {
-    if (e.target.classList.contains("read-more-btn")) {
-        const target = document.querySelector(e.target.dataset.target);
-        target.classList.toggle("open");
+    btn.addEventListener("click", function () {
+        const isHidden = content.style.display === "" || content.style.display === "none";
 
-        e.target.textContent = target.classList.contains("open")
-            ? "Vis mindre"
-            : "Les mer";
-    }
-});
-
+        if (isHidden) {
+            content.style.display = "block";
+            btn.textContent = "Les mindre";
+        } else {
+            content.style.display = "none";
+            btn.textContent = "Les mer";
+        }
+    });
 
 }); 

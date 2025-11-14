@@ -124,15 +124,15 @@
         "type": "email",
         "image": "",
         "imageAlt": "",
-        "question": "En e-post ser ut til å være fra sjefen og ber deg kjøpe gavekort raskt.",
+        "question": "Du får en e-post som sier at passordet ditt utløper i dag, og du må klikke på en lenke for å fornye det.",
         "options": [
-            "Kjøpe gavekortene så sjefen blir fornøyd",
-            "Sjekke avsenderadressen nøye og kontakte sjefen via kjent kanal",
-            "Slette e-posten uten å sjekke",
-            "Svare at du gjør det senere"
+            "Klikke på lenken og fornye passordet umiddelbart",
+            "Sjekke om e-posten faktisk kommer fra IT-avdelingen og kontakt dem før du klikker",
+            "Ignorere e-posten fullstendig",
+            "Sende e-posten videre til kollegaer for å spørre hva de gjør"
         ],
         "correctIndex": 1,
-        "explanation": "Dette er en vanlig direktesjefsvindel. Kontakt sjefen direkte."
+        "explanation": "Passordvarsler brukes ofte i phishing. Kontroller alltid avsender og lenke før du gjør noe."
     },
     {
         "id": 10,
